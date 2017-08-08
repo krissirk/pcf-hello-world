@@ -11,8 +11,8 @@
       <meta name="description" content="Sample 'Hello World' web app, built to practice PCF deployments">
       <meta name="author" content="Kris Harrison">
 
-      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-      <link rel="icon" href="favicon.ico" type="image/x-icon">
+      <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+      <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
 
       <title>Kris' PCF Hello World Web App</title>
 
