@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<!-- This layout template serves a common header and footer for all html pages in the app -->
+
+<html lang="en">
+
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Sample 'Hello World' web app to practice PCF deployments">
+      <meta name="author" content="Kris Harrison">
+
+      <title>PCF Hello World Web App</title>
+
+      <!-- CSS -->
+      <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="http://getbootstrap.com/examples/jumbotron/jumbotron.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+
+      <div class="container">
+
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand" href="{{ url_for('home') }}">Hello World PCF Project</a>
+
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+
+            <div class="navbar-brand navbar-right">Current weather widget placeholder</div>
+
+        </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Insert content from html pages -->
+    {%block content%}
+    {%endblock%}
+
+    <!-- Global Footer -->
+    <div class="container">
+
+      <hr>
+
+      <footer class="footer">
+          <p>Kris Harrison, August 2017</p>
+      </footer>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="http://getbootstrap.com/assets/js/vendor/jquery.min.js"><\/script>')</script>
+      <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>

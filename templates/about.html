@@ -1,0 +1,52 @@
+{%extends "layout.html"%}
+
+{%block content%}
+
+    <!-- Content for About page -->
+    <div class="jumbotron">
+
+        <div class="container">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation"><a href="{{ url_for('home') }}">Home</a>
+                    </li>
+                    <li role="presentation" class="active"><a href="{{ url_for('about') }}">About</a>
+                    </li>
+                    <li role="presentation"><a href="https://www.mlb.com/cubs" target="_blank">Go Cubs Go!</a>
+                    </li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">Hello World!!!</h3>
+        </div>
+
+        <div class="jumbotron">
+          <div class="container">
+            <h1>About Kris</h1>
+            <p>Kris is an acomplished product management, consulting, and e-commerce professional with expertise in the end-to-end success of multi-channel retail businesses & platforms. He champions and delivers industry-leading digital capabilities that delight customers, propel growth, and enhance profitability. Kris has the ability to address customer and business needs through foundational and innovative technologies.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+
+        <div class="row">
+
+           <div class="col-md-4">
+             <h2>Favorite Project</h2>
+             <p>A/B Testing and launching a differentiated Customer Wi-Fi experience across thousands of Gap Inc. stores.</p>
+           </div>
+
+           <div class="col-md-4">
+             <h2>Biggest Learning</h2>
+             <p>Effective and efficient performance management of individuals on team who were not delivering results.</p>
+          </div>
+
+           <div class="col-md-4">
+             <h2>Outside of Work</h2>
+             <p>Travel. Culinary experiences. Community.</p>
+           </div>
+         </div>
+
+      </div>
+
+{%endblock%}
