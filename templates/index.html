@@ -3,9 +3,9 @@
 {%block content%}
 
     <!-- Content for home page -->
-    <div class="jumbotron">
+    <div class="container"
 
-        <div class="container">
+      <div class="header clearfix">
             <nav>
                 <ul class="nav nav-pills pull-right">
                     <li role="presentation" class="active"><a href="{{ url_for('home') }}">Home</a>
@@ -16,8 +16,8 @@
                     </li>
                 </ul>
             </nav>
-            <h3 class="text-muted">Oh...Hello World!!!</h3>
-        </div>
+            <h3 class="text-muted" float>Oh...Hello World!!!</h3>
+      </div>
 
         <div class="jumbotron">
           <div class="container">
@@ -25,7 +25,6 @@
             <p>This is a simple 'Hello World' web app built with Flask & Bootstrap. Its purpose is to serve as a sample app to be deployed to Pivotal Cloud Foundry via Pivotal Web Services.</p>
           </div>
         </div>
-      </div>
 
       <div class="container">
 
@@ -46,6 +45,8 @@
              <p>Enhance web application and redeploy to PCF.</p>
            </div>
          </div>
+
+      </div>
 
       </div>
 
