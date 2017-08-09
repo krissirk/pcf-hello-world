@@ -2,5 +2,6 @@
 applications:
 - name: hello-pcf-krissirk
   memory: 512M
-  instances: 1
+  instances: 2
   random-route: false
+  buildpack: https://github.com/cloudfoundry/buildpack-python.git
