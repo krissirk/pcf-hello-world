@@ -1,0 +1,6 @@
+---
+applications:
+- name: hello-pcf-krissirk
+  memory: 512M
+  instances: 1
+  random-route: false
