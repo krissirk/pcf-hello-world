@@ -17,8 +17,8 @@
       <title>Kris' PCF Hello World Web App</title>
 
       <!-- CSS -->
-      <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
-      <link href="https://getbootstrap.com/examples/jumbotron/jumbotron.css" rel="stylesheet">
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link href="https://getbootstrap.com/docs/3.3/examples/jumbotron/jumbotron.css" rel="stylesheet">
   </head>
 
   <body>
@@ -69,10 +69,10 @@
 
     </div>
 
-    <!-- Bootstrap core JavaScript -->
+    <!-- Bootstrap + weather widget JavaScript -->
       <script type=text/javascript src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <script>window.jQuery || document.write('<script type=text/javascript src="https://getbootstrap.com/assets/js/vendor/jquery.min.js"><\/script>')</script>
-      <script type=text/javascript src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+      <script type=text/javascript src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
       <script type=text/javascript src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
       <script type=text/javascript src="{{ url_for('static', filename='weather.js') }}"></script>
 
